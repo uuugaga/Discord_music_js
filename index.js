@@ -64,7 +64,6 @@ client.on(Events.InteractionCreate, async (interaction) => {
 	}
 });
 
-// 註冊指令
 const registerCommands = async (client) => {
 	try {
 		if (client.application) {
@@ -77,11 +76,9 @@ const registerCommands = async (client) => {
 	}
 }
 
-// 當 client 就緒時顯示訊息
 client.once(Events.ClientReady, async (client) => {
-	console.log(`已就緒！已登入帳號：${client.user.tag}`);
+	console.log(`Ready! Logged in as ${client.user.tag}`);
 	await registerCommands(client);
 });
 
-// 使用 token 進行登入
 client.login(token);

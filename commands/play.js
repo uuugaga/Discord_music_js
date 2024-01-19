@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-const music = require('../utils/music');
+const music = require('./utility/music');
 
 module.exports = {
     data: new SlashCommandBuilder() // 建立指令的 function
