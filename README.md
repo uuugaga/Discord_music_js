@@ -1,7 +1,22 @@
-## Installation
+Installation
+------------
 
-- runing `npm install`
+Follow these steps to set up the project:
 
-## How to use
+1.  Install dependencies:
+    
+    bashCopy code
+    
+    `npm install`
+    
 
-1. Set your `token` and `clientId` in `config.json`
+Configuration
+-------------
+
+2.  Create a `config.json` file in the root of the project with the following content:
+    
+    jsonCopy code
+    
+    `{     "token": "Your_Discord_Bot_Token_Here",     "clientId": "Your_Discord_Client_Id_Here" }`
+    
+3.  Replace `Your_Discord_Bot_Token_Here` and `Your_Discord_Client_Id_Here` in the `config.json` file with your actual Discord bot token and client ID.
